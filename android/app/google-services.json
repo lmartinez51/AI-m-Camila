@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "335476372036",
+    "project_id": "ai-m-camila-app",
+    "storage_bucket": "ai-m-camila-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335476372036:android:c8d4e0d3139bf71c040211",
+        "android_client_info": {
+          "package_name": "com.lmartinez.aimcamila"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335476372036-iee9dkfaqaf4dt7i8onvloh6o864cgga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lmartinez.aimcamila",
+            "certificate_hash": "30da38c1191a16ebd7cc0cd50624e8b9c148c153"
+          }
+        },
+        {
+          "client_id": "335476372036-msrvdp7u25ad00n1orge6jsh8qbq0l0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZLcfPemjrJ7tSQzlFJ8hmeWow7lKW8iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335476372036-msrvdp7u25ad00n1orge6jsh8qbq0l0g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335476372036-8pgug786urkbt6kg2plpk4qj1t31qn1f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lmartinez.vainApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335476372036:android:9ff301c36b72c139040211",
+        "android_client_info": {
+          "package_name": "com.lmartinez.vain_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335476372036-5ffrnocoi3ckuludusb77qrilh0hho95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lmartinez.vain_app",
+            "certificate_hash": "30da38c1191a16ebd7cc0cd50624e8b9c148c153"
+          }
+        },
+        {
+          "client_id": "335476372036-msrvdp7u25ad00n1orge6jsh8qbq0l0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZLcfPemjrJ7tSQzlFJ8hmeWow7lKW8iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335476372036-msrvdp7u25ad00n1orge6jsh8qbq0l0g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "335476372036-8pgug786urkbt6kg2plpk4qj1t31qn1f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lmartinez.vainApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

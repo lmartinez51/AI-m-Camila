@@ -1,0 +1,29 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    
+    // ORDEN EJECUTIVA: La registramos ANTES de que Gradle evalúe el proyecto
+    project.afterEvaluate { p ->
+        if (p.hasProperty('android')) {
+            p.android {
+                compileSdkVersion 36
+            }
+        }
+    }
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
