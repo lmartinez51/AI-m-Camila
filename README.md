@@ -4,6 +4,16 @@
 
 ---
 
+## ℹ️ About / Acerca del Proyecto
+
+### English
+**AI'm Camila** is a next-generation multimodal AI virtual companion and real-time voice assistant built with Flutter. Powered by hot-swappable neural speech engines (OpenAI Realtime API & Google Gemini Live), visual AI avatars (D-ID), and a local high-performance cognitive memory system (ObjectBox), Camila offers empathetic, context-aware, and low-latency voice interactions with full native app control (tool calling).
+
+### Español
+**AI'm Camila** es una compañera virtual y asistente de voz multimodal de próxima generación desarrollada en Flutter. Impulsada por motores de voz neuronales intercambiables en caliente (OpenAI Realtime API y Google Gemini Live), avatares visuales (D-ID) y un sistema local de memoria cognitiva de alto rendimiento (ObjectBox), Camila ofrece interacciones de voz empáticas, conscientes del contexto y de baja latencia con control nativo de la aplicación mediante Function Calling.
+
+---
+
 ## 🌟 Características Principales
 
 *   **Interacción en Tiempo Real**: Soporte nativo para WebRTC y WebSockets (`flutter_webrtc`, `web_socket_channel`) para streaming de audio de baja latencia bidireccional usando las APIs Realtime de OpenAI y Gemini.

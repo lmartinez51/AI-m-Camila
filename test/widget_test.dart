@@ -1,30 +1,28 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'package:aimcamila/main.dart';
+import 'package:aimcamila/models/user_model.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp(initialRoute: '/'));
+  group('UserModel Unit Tests', () {
+    test('UserModel serializes and deserializes correctly', () {
+      final user = UserModel(
+        uid: 'user_123',
+        email: 'test@example.com',
+        name: 'Lorenzo',
+        nickname: 'Boss',
+        relationship: 'creator',
+      );
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+      final json = user.toJson();
+      expect(json['uid'], 'user_123');
+      expect(json['email'], 'test@example.com');
+      expect(json['name'], 'Lorenzo');
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+      final userFromJson = UserModel.fromJson(json);
+      expect(userFromJson.uid, 'user_123');
+      expect(userFromJson.email, 'test@example.com');
+      expect(userFromJson.name, 'Lorenzo');
+      expect(userFromJson.nickname, 'Boss');
+      expect(userFromJson.relationship, 'creator');
+    });
   });
 }

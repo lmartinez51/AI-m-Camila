@@ -7,6 +7,7 @@ import 'package:aimcamila/pages/login_page/auth_manager.dart';
 import 'package:aimcamila/providers/user_provider.dart';
 import 'package:aimcamila/providers/audio_stream_provider.dart';
 import 'package:aimcamila/widgets/settings_dialog.dart';
+import 'package:aimcamila/widgets/about_dialog.dart';
 import 'package:aimcamila/api/ai_voice_service.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -574,6 +575,20 @@ class MenuButton extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10)),
                         duration: const Duration(seconds: 2),
                       ),
+                    );
+                  },
+                ),
+                _buildBottomSheetItem(
+                  context: context,
+                  icon: Icons.info_outline,
+                  text: 'About',
+                  onTap: () {
+                    Navigator.pop(context);
+                    showDialog(
+                      context: context,
+                      barrierColor: Colors.black.withValues(alpha: 0.6),
+                      builder: (context) =>
+                          const AboutAppDialog(),
                     );
                   },
                 ),
